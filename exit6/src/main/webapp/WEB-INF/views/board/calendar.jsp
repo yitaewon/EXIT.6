@@ -8,22 +8,28 @@
 <head>
 <title>달력</title>
 <style type="text/css">
-td {
-	width: 50px;
-	height: 50px;
-	text-align: left;
-	font-size: 20px;
-	font-family: 굴림;
-	border: 2px border-color:#3333FF;
-	border-radius: 8px; /*모서리 둥글게*/
-}
-
-.cal_top {
-	text-align: center;
-	font-size: 30px;
-	padding-top: 10px;
-	padding-bottom: 20px;
-}
+	td {
+		width: 50px;
+		height: 110px;
+		text-align: left;
+		font-size: 20px;
+		font-family: 굴림;
+		border: 2px border-color:#3333FF;
+		border-radius: 8px; /*모서리 둥글게*/
+	}
+	
+	.cal_top {
+		text-align: center;
+		font-size: 30px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+	#calendar {
+		width: 70%;
+		display: table; 
+		margin-left: auto; 
+		margin-right: auto;
+	}
 </style>
 </head>
 <body>
