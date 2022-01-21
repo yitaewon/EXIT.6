@@ -42,13 +42,13 @@
 	</div>
 	<table class="table table-striped" id="calendar">
 		<tr>
-			<th align="left">일</th>
+			<th align="left"><font color='red'>일</font></th>
 			<th align="left">월</th>
 			<th align="left">화</th>
 			<th align="left">수</th>
 			<th align="left">목</th>
 			<th align="left">금</th>
-			<th align="left">토</th>
+			<th align="left"><font color='blue'>토</font></th>
 		</tr>
 	</table>
 	<!-- 모달 -->
@@ -66,16 +66,16 @@
                <div class="table-responsive">
                   <table class="table">
                      <colgroup>
-                        <col width="10%">
-                        <col width="70%">
-                        <col width="10%">
+                        <col width="15%">
+                        <col width="55%">
+                        <col width="20%">
                         <col width="10%">
                      </colgroup>
                      <thead>
                         <tr>
                            <th>시간</th>
-                           <th>내용</th>
-                           <th>중요</th>
+                           <th>참가 이름</th>
+                           <th>이름 추가</th>
                            <th>삭제</th>
                         </tr>
                      </thead>
@@ -117,18 +117,19 @@
 <%--                   <input type="hidden"class="form-control w130" id="CALYEAR" name="CALYEAR" value="${year }"> --%>
 <%--                   <input type="hidden"class="form-control w130" id="CALMONTH" name="CALMONTH" value="${month }"> --%>
 <!--                   <input type="hidden"class="form-control w130" id="CALDAY" name="CALDAY"> -->
+ 				  <label for="contents">[새로운 항목 추가]</label> 
                   <div class="form-group">
                      <label for="exampleInputName2">시간</label>
                      <input type="time" class="form-control w130" id="CALTIME" name="CALTIME">
                   </div>
                   <div class="form-group">
-                     <label for="contents">내용</label> 
-                     <input name="contents" class="form-control" id="contents" type="text" maxlength="20" placeholder="스케줄 내용을 입력해 주세요.">
+                     <label for="contents">이름</label> 
+                     <input name="contents" class="form-control" id="contents" type="text" maxlength="20" placeholder="이름을 입력해 주세요.">
                   </div>
-                  <div class="checkbox">
+                 <!--  <div class="checkbox">
                      <label> <input name="CALREQ" id="CALREQ" type="checkbox" id="req"> 중요 스케줄(체크시 <span><font color='red'>*</font></span>표시 됩니다.)
                      </label>
-                  </div>
+                  </div> -->
                   <div class="modal-footer">
                      <button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
                      <button type="submit" class="btn btn-primary" data-dismiss="modal" id="save">저장</button>
@@ -240,16 +241,16 @@ $(function(){
 			if (cnt % 7 == 1) {/*일요일 계산*/
 				//1주일이 7일 이므로 일요일 구하기
 				//월화수목금토일을 7로 나눴을때 나머지가 1이면 cnt가 1번째에 위치함을 의미한다
-				cell.innerHTML = "<font color=black>" + i
+				cell.innerHTML = "<font color=red>" + i
 				//1번째의 cell에만 검은색
-				cell.style.background = 'red';
+				// cell.style.background = 'red';
 				//1번째의 cell의 배경색 변경 
 			}    
 			if (cnt%7 == 0){/* 1주일이 7일 이므로 토요일 구하기*/
 			    //월화수목금토일을 7로 나눴을때 나머지가 0이면 cnt가 7번째에 위치함을 의미한다
-			    cell.innerHTML = "<font color=black>" + i
+			    cell.innerHTML = "<font color=blue>" + i
 			    //7번째의 cell에만 색칠
-			    cell.style.background = 'blue';
+			    // cell.style.background = 'blue';
 			 	//7번째의 cell의 배경색 변경 
 			    row = calendar.insertRow();
 			    //토요일 다음에 올 셀을 추가
