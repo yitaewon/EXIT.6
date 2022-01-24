@@ -34,8 +34,7 @@
 </head>
 <body>
 	<div class="cal_top">
-		<span id="cal_top_year"></span><br> <span id="tbCalendarY">YYYY년 m월</span><br><a href="#" id="movePrevMonth">
-		
+		<span id="cal_top_year"></span><br> <span id="tbCalendarY">YYYY년</span><br><a href="#" id="movePrevMonth">
 		<span id="prevMonth" class="cal_tit" onclick="prevCalendar()">&lt;</span></a> 
 		<span id="tbCalendarM">m월</span> <a href="#" id="moveNextMonth">
 		<span id="nextMonth" class="cal_tit" onclick="nextCalendar()">&gt;</span></a>
@@ -124,7 +123,7 @@
                   </div>
                   <div class="form-group">
                      <label for="contents">이름</label> 
-                     <input name="contents" class="form-control" id="contents" type="text" maxlength="20" placeholder="이름을 입력해 주세요.">
+                     <input name="name" class="form-control" id="name" type="text" maxlength="10" placeholder="이름을 입력해 주세요.">
                   </div>
                  <!--  <div class="checkbox">
                      <label> <input name="CALREQ" id="CALREQ" type="checkbox" id="req"> 중요 스케줄(체크시 <span><font color='red'>*</font></span>표시 됩니다.)
@@ -139,7 +138,6 @@
          </div>
       </div>
    </div>
-	
 </body>
 <script type="text/javascript">
 $(function(){
