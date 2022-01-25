@@ -125,10 +125,6 @@
                      <label for="contents">이름</label> 
                      <input name="name" class="form-control" id="name" type="text" maxlength="10" placeholder="이름을 입력해 주세요.">
                   </div>
-                 <!--  <div class="checkbox">
-                     <label> <input name="CALREQ" id="CALREQ" type="checkbox" id="req"> 중요 스케줄(체크시 <span><font color='red'>*</font></span>표시 됩니다.)
-                     </label>
-                  </div> -->
                   <div class="modal-footer">
                      <button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
                      <button type="submit" class="btn btn-primary" data-dismiss="modal" id="save">저장</button>
