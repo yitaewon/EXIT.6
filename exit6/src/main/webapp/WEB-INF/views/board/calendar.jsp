@@ -209,28 +209,28 @@ $(function(){
 				$("#year").text(today.getFullYear());
 	            $("#month").text(today.getMonth() + 1);
 	            $("#day").text($(this).text());
-//             	$.ajax({
-//                     url: "/board/modalCalendar",	
-//                     type: "post",
-//                     dataType: "json",
-//                     data: {calDay : $(this).text()},
-//      				success : function(calendarList) {
-//      					alert("성공함.");
-//    	                var table = "";
-// 	   					table += '<tr>';
-// 	   					table += '<td>'+ calendarList.calTime +'</td>';
-// 	   					table += '<td>'+ calendarList.contents +'</td>';
-// 	   					table += '<td>*</td>';
-// 	   					table += '<td><a href="calendarDel?CALNO='+ calendarList.calNo +'"><span>&times;</span></a></td>';
-// 	   					table += '</tr>';
-// 	  					$('#dataSection').html(table);
+            	$.ajax({
+                    url: "/board/modalCalendar",	
+                    type: "post",
+                    dataType: "json",
+                    data: {calDay : $(this).text()},
+     				success : function(calendarList) {
+     					alert("성공함.");
+   	                var table = "";
+	   					table += '<tr>';
+	   					table += '<td>'+ calendarList.calTime +'</td>';
+	   					table += '<td>'+ calendarList.contents +'</td>';
+	   					table += '<td>*</td>';
+	   					table += '<td><a href="calendarDel?CALNO='+ calendarList.calNo +'"><span>&times;</span></a></td>';
+	   					table += '</tr>';
+	  					$('#dataSection').html(table);
 	   	            	$('#myModal').modal('show');
-//      			    },
-//                      error : function() {
-//      			        alert("Error!");
-//      			        boardList();
-//      			    }
-//                  });
+     			    },
+                     error : function() {
+     			        alert("Error!");
+     			        boardList();
+     			    }
+                 });
             });
 			if (cnt % 7 == 1) {/*일요일 계산*/
 				//1주일이 7일 이므로 일요일 구하기
