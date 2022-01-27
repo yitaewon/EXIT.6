@@ -11,6 +11,7 @@
 	</li>
 	<li role="presentation" class="calculator"><a href="/board/calculator">계산기</a></li>
 	<li role="presentation" class="calendar"><a href="/board/calendar">캘린더</a></li>
+	<li role="presentation" class="test"><a href="/board/test">테스트</a></li>
 </ul>
 <script>
 $(document).ready(function() {
@@ -27,6 +28,7 @@ $(document).ready(function() {
 		$(".calculator").addClass("active");
 	}else if(loc.indexOf("calendar") > -1){
 		$(".calendar").addClass("active");
-	}
+	}else if(loc.indexOf("test") > -1){
+		$(".test").addClass("active");
 });
 </script>

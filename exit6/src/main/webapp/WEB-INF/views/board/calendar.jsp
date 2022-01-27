@@ -205,7 +205,7 @@ $(function(){
             cell = row.insertCell();//열 한칸한칸 계속 만들어주는 역할
             cnt = cnt + 1;//열의 갯수를 계속 다음으로 위치하게 해주는 역할
             cell.innerHTML = i;//셀을 1부터 마지막 day까지 HTML 문법에 넣어줌
-            cell.addEventListener('click', function(){
+            cell.addEventListener('click', function(){ 
 				$("#year").text(today.getFullYear());
 	            $("#month").text(today.getMonth() + 1);
 	            $("#day").text($(this).text());

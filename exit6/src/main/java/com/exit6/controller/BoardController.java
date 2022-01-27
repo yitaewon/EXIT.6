@@ -48,6 +48,13 @@ public class BoardController {
 		return "/board/calendar";
 	}
 	
+	// 캘린더 메인화면 
+	@RequestMapping(value = "/board/test")
+	public String test(Model model) {
+		logger.info("/board/test");
+		return "/board/test";
+	}
+	
 	// 캘린더 모달
 	@RequestMapping("/board/modalCalendar")
 	public @ResponseBody ResponseEntity<CalendarVo> modalCalendar(@RequestParam("calDay") int calDay) {
