@@ -180,7 +180,6 @@ function buildDeck(){
 			index++;
 		}
 	}
-
 }
 
 function MCard(n,s,picname){ //카드 생성함수
@@ -276,7 +275,6 @@ function newGame(){ //새 게임 시작
 	dealStart();
 	return false;
 }
-
 </script>
 </head>
 <body bgcolor="#FFFFFF" text="#333333" link="#006699" vlink="#006699" alink="#006699" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="overflow:auto" onLoad="init();">
@@ -284,14 +282,13 @@ function newGame(){ //새 게임 시작
   <tr> 
     <td width="471" bgcolor="#336699"> 
 	<header><font color="#FFFFFF">Black Jack Game</font>  </header> 
-	<canvas id="canvas" width="500" height="400"> 
-      <font color="#FFFFFF">this browser can't activate HTML5 canvas element. 
-      </font></canvas> <br/>
-	<center>
+	<canvas id="canvas" width="500" height="400">
+      <font color="#FFFFFF">this browser can't activate HTML5 canvas element. </font></canvas> <br/>
+	<%-- <center>
 	<button onClick="deal();">Hit</button>
 	<button onClick="playerDone();">Stand</button><br/>
 	    <button onClick="newGame();">Next Game</button>
-	</center>
+	</center> --%>
 	  <footer><font color="#FFFFFF">카드 추가는 Hit, 그만 받기는 Stand, 새 게임은 Next Game 
       버튼을 누르세요.<br/>
       <font color="#CCCCCC">카드 그림 출처: http://www.eludication.org/playingcards.html 
@@ -308,7 +305,6 @@ function newGame(){ //새 게임 시작
         <p>&nbsp;</p>
       </div>
 </table>
-
 <br>
 <table width="406" border="0" cellspacing="0" cellpadding="0">
   <tr> 
