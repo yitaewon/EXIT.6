@@ -7,11 +7,10 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>   
 
 <!DOCTYPE html>
-
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Winds Diary</title>
+<title>test</title>
 <style type="text/css">
 A:link {text-decoration:none}
 A:visited {text-decoration:none}
@@ -278,45 +277,42 @@ function newGame(){ //새 게임 시작
 </script>
 </head>
 <body bgcolor="#FFFFFF" text="#333333" link="#006699" vlink="#006699" alink="#006699" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="overflow:auto" onLoad="init();">
-<table width="510"  border="2" cellpadding="5" cellspacing="5" bordercolor="#000000">
-  <tr> 
-    <td width="471" bgcolor="#336699"> 
-	<header><font color="#FFFFFF">Black Jack Game</font>  </header> 
-	<canvas id="canvas" width="500" height="400">
-      <font color="#FFFFFF">this browser can't activate HTML5 canvas element. </font></canvas> <br/>
-	<%-- <center>
-	<button onClick="deal();">Hit</button>
-	<button onClick="playerDone();">Stand</button><br/>
-	    <button onClick="newGame();">Next Game</button>
-	</center> --%>
-	  <footer><font color="#FFFFFF">카드 추가는 Hit, 그만 받기는 Stand, 새 게임은 Next Game 
-      버튼을 누르세요.<br/>
-      <font color="#CCCCCC">카드 그림 출처: http://www.eludication.org/playingcards.html 
-      </font> </font> </footer> <tr>
+<table style="text-align: center;" width="510"  border="2" cellpadding="5" cellspacing="5" bordercolor="#000000">
+	<tr> 
+		<td width="471" bgcolor="#336699"> 
+			<header>
+				<font color="#FFFFFF">Black Jack Game</font>
+			</header> 
+			<canvas id="canvas" width="500" height="400"></canvas><br/>
+			<div style="text-align: center;">
+				<button onClick="deal();">Hit</button>
+				<button onClick="playerDone();">Stand</button><br/>
+			    <button onClick="newGame();">Next Game</button>
+			</div>
+			<footer>
+				<font color="#FFFFFF">카드 추가는 Hit, 그만 받기는 Stand, 새 게임은 Next Game 버튼을 누르세요.</font><br/>
+			    <font color="#CCCCCC">카드 그림 출처: http://www.eludication.org/playingcards.html </font> 
+		    </footer> 
+	<tr>
     <td bgcolor="#000000"><div align="center">
         <p>&nbsp;</p>
-        <p><font size="+1"><strong><font color="#CCCCCC">Black Jack 게임(HTML5 + 
-          Javascript)</font></strong></font><font color="#CCCCCC"><br>
+        <p><font size="+1"><strong><font color="#CCCCCC">Black Jack 게임</font></strong></font><font color="#CCCCCC"><br>
           J,Q,K 카드는 10으로 계산하고 Ace의 경우 1 또는 11로 계산하여<br>
-          받은 카드 수의 합이 21에 가까운 수를 얻는 쪽이 이기는 게임.<br>
-          플레이어와 딜러는 처음에 각가 2장씩의 카드를 받고<br>
-          원하면 카드를 더 받을 수 있지만 카드 수의 합이 21이 넘어서면 지게된다.<br>
-          그외에도 실제 블랙잭의 경우 여러 규칙이 있지만 생략.</font></p>
+	          받은 카드 수의 합이 21에 가까운 수를 얻는 쪽이 이기는 게임.<br>
+	          플레이어와 딜러는 처음에 각가 2장씩의 카드를 받고<br>
+	          원하면 카드를 더 받을 수 있지만 카드 수의 합이 21이 넘어서면 지게된다.<br>
+	          그외에도 실제 블랙잭의 경우 여러 규칙이 있지만 생략.</font></p>
         <p>&nbsp;</p>
       </div>
 </table>
 <br>
+
 <table width="406" border="0" cellspacing="0" cellpadding="0">
   <tr> 
     <td width="406"><p align="left"> 책보고 HTML5 + javascript로 블랙잭 게임 따라하기.<br>
         크기 축소, Hit, Stand, 새게임 등 키보드 이벤트에서 버튼 클릭으로 변경.<br>
         카드를 무한히 받을 수 있는 버그와 승부가 난 뒤 에도 카드 더 받기가 가능한 버그 수정. <br>
         카드덱 다 떨어진 뒤 New Game 버튼 클릭시 새 카드덱 만드는 기능 추가.</p>
-      <p align="left">이로써 '한번에 배우는 HTML5+자바스크립트(The Essential Guide to HTML5)'의 
-        모든 예제 따라하기 완료. <br>
-        나름 꽤 재밌었다. 한국어판의 경우 책은 이쁘게 잘 꾸몄고 특히 코드를 알록달록하게 색칠하여 알아보기 쉽게 한 것이 좋았다. 
-        번역 퀄리티는 한심했다만.</p>
-      <p>13/03/27 수</p></td>
   </tr>
 </table>
 <p>&nbsp;</p>
