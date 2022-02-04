@@ -48,11 +48,11 @@ public class BoardController {
 		return "/board/calendar";
 	}
 	
-	// 캘린더 메인화면 
-	@RequestMapping(value = "/board/test")
+	// test화면
+	@RequestMapping(value = "/htm13/test")
 	public String test(Model model) {
-		logger.info("/board/test");
-		return "/board/test";
+		logger.info("/htm13/test");
+		return "/htm13/test";
 	}
 	
 	// 캘린더 모달

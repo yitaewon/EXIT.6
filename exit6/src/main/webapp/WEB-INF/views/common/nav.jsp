@@ -11,7 +11,7 @@
 	</li>
 	<li role="presentation" class="calculator"><a href="/board/calculator">계산기</a></li>
 	<li role="presentation" class="calendar"><a href="/board/calendar">캘린더</a></li>
-	<li role="presentation" class="test"><a href="/board/test">테스트</a></li>
+	<li role="presentation" class="test"><a href="/htm13/test">테스트</a></li>
 </ul>
 <script>
 $(document).ready(function() {

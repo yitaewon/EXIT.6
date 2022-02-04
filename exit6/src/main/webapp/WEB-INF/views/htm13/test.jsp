@@ -68,7 +68,7 @@ function init(){
 	ctx.font="italic 15pt Georgia";
 	ctx.fillStyle="white";
 	buildDeck(); //카드 덱 생성
-	back.src="html5/cardback.png";
+	//back.src="html5/cardback.png";
 	canvas1=document.getElementById('canvas');
 	window.addEventListener('keydown', getKey, false);
 	shuffle(); //카드 섞기
