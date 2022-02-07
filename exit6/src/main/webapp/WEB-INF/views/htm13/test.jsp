@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Winds Diary</title>
+<title>test</title>
 <style type="text/css">
 A:link {text-decoration:none}
 A:visited {text-decoration:none}
@@ -282,20 +282,17 @@ function newGame(){ //새 게임 시작
   <tr> 
     <td width="471" bgcolor="#336699"> 
 	<header><font color="#FFFFFF">Black Jack Game</font>  </header> 
-	<canvas id="canvas" width="500" height="400"> 
-      <font color="#FFFFFF">this browser can't activate HTML5 canvas element. 
-      </font></canvas> <br/>
+		<canvas id="canvas" width="500" height="400"> 
+	    </canvas> <br/>
 	<button onClick="deal();">Hit</button>
 	<button onClick="playerDone();">Stand</button><br/>
 	    <button onClick="newGame();">Next Game</button>
-	  <footer><font color="#FFFFFF">카드 추가는 Hit, 그만 받기는 Stand, 새 게임은 Next Game 
-      버튼을 누르세요.<br/>
+	  <footer><font color="#FFFFFF">카드 추가는 Hit, 그만 받기는 Stand, 새 게임은 Next Game 버튼을 누르세요.<br/>
       <font color="#CCCCCC">카드 그림 출처: http://www.eludication.org/playingcards.html 
       </font> </font> </footer> <tr>
     <td bgcolor="#000000"><div align="center">
         <p>&nbsp;</p>
-        <p><font size="+1"><strong><font color="#CCCCCC">Black Jack 게임(HTML5 + 
-          Javascript)</font></strong></font><font color="#CCCCCC"><br>
+        <p><font size="+1"><strong><font color="#CCCCCC">Black Jack 게임(HTML5 + Javascript)</font></strong></font><font color="#CCCCCC"><br>
           J,Q,K 카드는 10으로 계산하고 Ace의 경우 1 또는 11로 계산하여<br>
           받은 카드 수의 합이 21에 가까운 수를 얻는 쪽이 이기는 게임.<br>
           플레이어와 딜러는 처음에 각가 2장씩의 카드를 받고<br>
