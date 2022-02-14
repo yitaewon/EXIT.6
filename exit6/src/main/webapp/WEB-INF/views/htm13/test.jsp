@@ -178,7 +178,6 @@ function buildDeck(){
 			index++;
 		}
 	}
-
 }
 
 function MCard(n,s,picname){ //카드 생성함수
@@ -301,7 +300,6 @@ function newGame(){ //새 게임 시작
         <p>&nbsp;</p>
       </div>
 </table>
-
 <br>
 <table width="406" border="0" cellspacing="0" cellpadding="0">
   <tr> 
@@ -309,11 +307,6 @@ function newGame(){ //새 게임 시작
         크기 축소, Hit, Stand, 새게임 등 키보드 이벤트에서 버튼 클릭으로 변경.<br>
         카드를 무한히 받을 수 있는 버그와 승부가 난 뒤 에도 카드 더 받기가 가능한 버그 수정. <br>
         카드덱 다 떨어진 뒤 New Game 버튼 클릭시 새 카드덱 만드는 기능 추가.</p>
-      <p align="left">이로써 '한번에 배우는 HTML5+자바스크립트(The Essential Guide to HTML5)'의 
-        모든 예제 따라하기 완료. <br>
-        나름 꽤 재밌었다. 한국어판의 경우 책은 이쁘게 잘 꾸몄고 특히 코드를 알록달록하게 색칠하여 알아보기 쉽게 한 것이 좋았다. 
-        번역 퀄리티는 한심했다만.</p>
-      <p>13/03/27 수</p></td>
   </tr>
 </table>
 <p>&nbsp;</p>
