@@ -299,6 +299,8 @@ function newGame(){ //새 게임 시작
           그외에도 실제 블랙잭의 경우 여러 규칙이 있지만 생략.</font></p>
         <p>&nbsp;</p>
       </div>
+      
+      
 </table>
 <br>
 <table width="406" border="0" cellspacing="0" cellpadding="0">
