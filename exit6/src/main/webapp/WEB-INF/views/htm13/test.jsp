@@ -273,7 +273,6 @@ function newGame(){ //새 게임 시작
 	dealStart();
 	return false;
 }
-
 </script>
 </head>
 <body bgcolor="#FFFFFF" text="#333333" link="#006699" vlink="#006699" alink="#006699" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="overflow:auto" onLoad="init();">
@@ -299,8 +298,6 @@ function newGame(){ //새 게임 시작
           그외에도 실제 블랙잭의 경우 여러 규칙이 있지만 생략.</font></p>
         <p>&nbsp;</p>
       </div>
-      
-      
 </table>
 <br>
 <table width="406" border="0" cellspacing="0" cellpadding="0">
