@@ -254,7 +254,6 @@ function shuffle(){
 		i--;
 	}
 }
-
 function swapInDecks(j,k){ //두 카드 서로 바꾸기
 	var hold=new MCard(deck[j].num, deck[j].suit, deck[j].picture.src);
 	deck[j]=deck[k];
