@@ -259,7 +259,6 @@ function swapInDecks(j,k){ //두 카드 서로 바꾸기
 	deck[j]=deck[k];
 	deck[k]=hold;
 }
-
 function newGame(){ //새 게임 시작
 	if(needNewDeck){ //카드덱을 다 사용해 새 카드덱이 필요시
 		init();
