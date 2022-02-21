@@ -236,7 +236,6 @@ function playerDone(){ //플레이어 차례 끝, 게임 결과 판정
 	dealOk=false; //승부가 난 뒤에도 카드 더 받기가 가능한 버그 수정용
 	return false;
 }
-
 function showHouse(){ //딜러 카드 표시
 	houseXp=300;
 	for(var i=0; i<hi; i++){
